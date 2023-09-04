@@ -1,0 +1,116 @@
+.footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    border-top: 1px solid rgb(231, 228, 228);
+    margin-bottom: 50px;
+}
+.ft-logo{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    flex-basis: 20%;
+}
+.ft-logo span{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.ft-cl{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex-basis: 20%;
+}
+.fb-40{
+    flex-basis: 40%;
+}
+.ft-headings{
+    color: #cfcaca;
+    margin-bottom: 20px;
+}
+.ft-cl p{
+    font-size: 18px;
+    transition: all 0.3s;
+}
+.ft-col-red span{
+    color: red;
+    text-decoration: underline;
+    margin-right: 2px;
+}
+.ft-heading:hover{
+ color:red;
+ text-decoration: underline;
+}
+.input-field{
+background-color: #eeeeee;
+padding-left:5px ;
+width: 100%;
+border-radius: 10px;
+}
+.input-field input{
+    width: 70%;
+    height: 54px;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+.input-field input:focus{
+    outline: none;
+}
+.input-field button{
+    width: 28%;
+    height: 46px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.ft-fw{
+    font-size: 14px !important;
+    font-weight: 300;
+    color: rgb(203, 198, 198);
+}
+
+/* /////////////////////////////////////////////////////////
+////////////////////////////////////////////////// */
+
+.copyright{
+    border-top: 1px solid rgb(184, 179, 179);
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.privacy{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    align-items: center;
+}
+.privacy span{
+   font-weight: 500;
+}
+.privacy span:hover{
+    text-decoration: underline;
+}
+.social-media{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    align-items: center;
+    transition: all 0.3s;
+}
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-linkedin-in:hover{
+  color:red
+}

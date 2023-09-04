@@ -1,0 +1,425 @@
+/* Resetting margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+/* customization of scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #636161;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1c1c;
+}
+/* -----------------Navbar------------------ */
+/* Styling for the navigation bar */
+
+.navbar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  position: sticky !important;
+  top: 0px;
+  z-index: 1000;
+}
+/* logo adjusting */
+.logo img {
+  width: 34px;
+  height: 34px;
+}
+
+/* Styling for the groups of links and menus */
+.links-groups,
+.menus-groups {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+
+/* Styling for the list of links */
+.list {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Styling for individual links */
+.list a {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  transition: all 0.3s;
+  padding: 20px 0px;
+}
+
+/* adding hover effect on links */
+.list a:hover {
+  color: red;
+}
+
+/* Styling for login-related elements */
+.logins {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* styling for logins */
+.login:hover{
+  text-decoration: underline;
+}
+
+
+/* styling for material icons  */
+.icon {
+  font-size: 1.5rem !important;
+  padding: 8px;
+  position: relative;
+}
+.icon:hover{
+  background-color: rgb(226, 217, 217);
+  border-radius: 50%;
+}
+
+.mall::before{
+  content: "0";
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: transparent;
+
+}
+.menu {
+  font-size: 2rem !important;
+  cursor: pointer;
+}
+.df-n{
+  display: block;
+}
+
+.menu-list{
+  display: none;
+  cursor: pointer;
+}
+
+/* drop down effects */
+
+.dropdown {
+  display: none;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  top: 80px;
+  left: 10vw;
+  width: 80vw;
+  height: 80vh;
+  padding: 10px;
+  transform: translateY(-100%);
+  transition: all 0.3s;
+  z-index: 10000;
+  background-color: white;
+  border-radius: 5px;
+}
+.home:hover .dropdown {
+  display: grid;
+  transform: translateY(0);
+}
+
+/* ---------------------------------- dropdown Home list --------------------- */
+.cl {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.cards {
+  width: 90%;
+  height: 70%;
+  border: 1px solid rgb(176, 181, 176);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s;
+}
+.cards img:hover {
+  scale: 1.2;
+}
+
+.headings {
+  font-size: 12px;
+  position: relative;
+  display: inline;
+  transition: all 0.3s;
+}
+
+.headings::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed */
+  width: 0;
+  height: 1px;
+  background-color: red;
+  transition: width 0.3s;
+}
+
+.headings:hover::before {
+  width: 100%;
+}
+.headings:hover {
+  color: rgb(239, 30, 30);
+  letter-spacing: 0.5px;
+}
+
+/* ---------------------------------- dropdown Home list --------------------- */
+.dropdown2,
+.dropdown3,
+.dropdown4,
+.dropdown5,
+.dropdown6 {
+  display: none;
+  flex-flow: row;
+  position: absolute;
+  top: 80px;
+  left: 20vw;
+  padding: 10px;
+  width: 34vw;
+  transform: translateY(-100%);
+  transition: all 0.3s;
+  z-index: 10000;
+  background-color: white;
+  border-radius: 5px;
+}
+.dropdown3 {
+  width: 80vw;
+  left: 10vw;
+}
+.dropdown5 {
+  left: 40vw;
+}
+.dropdown6 {
+  left: 50vw;
+}
+.dropdown4 {
+  left: 25vw;
+  width: 50vw;
+}
+.elements:hover .dropdown2,
+.portfolio:hover .dropdown3,
+.pages:hover .dropdown4,
+.shop:hover .dropdown5,
+.blog:hover .dropdown6 {
+  display: flex;
+  transform: translateY(0);
+}
+.left,
+.right,
+.mid,
+.left-second,
+.right-second {
+  flex-basis: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 10vw;
+  gap: 20px;
+  padding: 10px;
+}
+.left,
+.mid,
+.left-second,
+.right-second {
+  border-right: 1px solid rgb(214, 209, 209);
+}
+
+.h-primary {
+  font-size: 15px;
+  position: relative;
+}
+.h-primary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed */
+  width: 100%;
+  height: 1.5px;
+  background-color: red;
+}
+
+
+
+
+/* //////////////////////////// */
+
+.back-to-top{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #FF2759;
+  position: fixed;
+  bottom: 20px;
+  left: 94vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgba(183, 178, 178, 0.5) 0px 10px 7px 6px;
+}
+
+/* //////////Right Modal////////// */
+.bg-trans{
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  justify-content: flex-end;
+  height: fit-content;
+}
+.modal{
+  display: flex;
+  flex-flow: column;
+  width: 370px;
+  padding: 40px;
+  background-color: white; 
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.df-fl{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#close{
+  cursor: pointer;
+}
+.df-cl{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  transition: all 0.3s ;
+}
+.toggle a{
+  color: black;
+}
+
+.df-cl a{
+display: flex;
+flex-flow: row;
+align-items: center;
+text-decoration: none;
+font-size: 1.2rem;
+margin-bottom: 10px;
+color: black;
+}
+.df-cl a:hover{
+  color: red;
+}
+.search-items{
+  margin-top: 10px;
+  position: relative;
+}
+
+.search-items button{
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.search-items input{
+  height: 50px;
+  border-radius: 10px;
+  padding: 0px 20px;
+}
+.search-items input:focus{
+  outline: none;
+}
+.search-items span{
+  position: absolute;
+  top: 83px;
+  right: 10px;
+  font-size: 1.8rem;
+}
+
+.address{
+  margin-top: 25px;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ip{
+  color:red; 
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  margin-bottom: 15px;
+}
+.ip:hover{
+  text-decoration: underline;
+  color: red;
+}
+.nested-drop{
+  background-color: #f4fafe;
+  margin: 10px;
+  padding: 10px;
+  display: none;
+}
+.nested-drop li{
+  list-style: none;
+}
+.nested-drop li a{
+  color: black;
+}
+.nested-drop li a:hover{
+  text-decoration: underline;
+}
+
+/* /////////////////// */
+.Sidebar {
+  display: none;}

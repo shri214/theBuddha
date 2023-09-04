@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+.card {
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(226, 243, 243);
+}
+
+.card img {
+  flex-basis: 50%;
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.texts {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  padding-left: 100px;
+  gap: 20px;
+}
+.texts h6 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(156, 153, 153, 0.8);
+  margin-top: 80px;
+}
+.title {
+  font-size: 6rem;
+}
+.para {
+  font-size: 2rem;
+}
+.show {
+  text-decoration: none;
+  height: 50px;
+  width: 150px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  /* z-index: 1; */
+}
+.show:hover {
+  background-color: rgb(230, 51, 185);
+}
+
+.index1 {
+  display: flex;
+}
+.index2 {
+  display: none;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.controller {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 180px;
+  padding: 0px 150px;
+  margin-bottom: 40px;
+}
+.controller h1 {
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+.controller div span {
+  background-color: rgba(186, 182, 182, 0.8);
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+.controller div span:hover {
+  background-color: black;
+  color: white;
+}
+
+/* carousel */
+.Carousel,
+.Carousel2 {
+  margin-top: 40px;
+  width: 90vw;
+  margin: auto;
+  display: block;
+  overflow: hidden; /* Hide the overflow */
+  position: relative; /* Needed for absolute positioning */
+}
+.Carousel ul,
+.Carousel2 ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: calc(100% + 30px); /* Adjusted width to account for the gap */
+  transition: transform 0.3s ease-in-out; /* Add smooth transition */
+}
+.Carousel ul li {
+  list-style: none;
+  flex: 0 0 calc(25% - 30px); /* Each item takes up 25% of the container width minus gap */
+  background-color: #f5f5f5;
+  height: 60vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.Carousel ul li img,
+.Carousel2 ul li img {
+  height: 90%;
+  object-fit: contain;
+  width: 90%;
+  overflow: hidden;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
+.Carousel ul li button {
+  margin-bottom: 20px;
+  border: none;
+  height: 35px;
+  padding: 0px 8px;
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+.Carousel ul li button:hover {
+  background-color: #ff2759;
+  color: white;
+}
+
+.car-list:hover .img,
+.car-list2:hover .img {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+/* Navigation button styling */
+#prevButton,
+#nextButton,
+#prevButton2,
+#nextButton2 {
+  margin-top: 10px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.two-box {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 180px;
+
+  overflow: hidden;
+}
+
+.box {
+  flex-basis: 50%;
+  margin: 0px 30px;
+  height: 80vh;
+  position: relative;
+  animation: moving 1s;
+  transition: all 0.3s;
+}
+.box img {
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@keyframes moving {
+  from {
+    left: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+.b1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fffbe6;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.b2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #effaff;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.box div {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  margin-left: 10%;
+  gap: 10px;
+}
+.cl-red {
+  color: red;
+  font-size: 1.7rem;
+}
+.fs-2 {
+  font-size: 2rem;
+}
+.box div button {
+  height: 45px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.box div button:hover {
+  background-color: #ff2759;
+  color: white;
+  border: none;
+}
+/* /////////////////////////// ///////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////*/
+.car-list2 li .carts {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+  transform: scale(0);
+  transition: all 0.5s;
+  opacity: 0;
+}
+.car-list2:hover .carts {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.Carousel2 ul .car-list2 {
+  flex: 0 0 calc(25% - 30px); /* Each item takes up 25% of the container width minus gap */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.car-list2 li {
+  background-color: #f5f5f5;
+  height: 60vh;
+  list-style: none;
+  width: 100%;
+  position: relative;
+}
+.pricetag {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 10px 0;
+}
+.stars {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color: black;
+  font-size: 0.8rem;
+  width: 100%;
+}
+.stars:first-child {
+  color: gray;
+}
+.name:hover {
+  text-decoration: underline;
+  color: black;
+}
+.star {
+  font-size: 16px !important;
+  color: #ffcb65;
+}
+.star2 {
+  font-size: 12px !important;
+  color: white;
+  -webkit-text-stroke-color: rgb(155, 150, 150);
+  -webkit-text-stroke-width: 1px;
+}
+.pricetag p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* ////////////////////////////////////////////////// */
+
+.items {
+  background-color: #f1f7fd;
+}
+.items .controller h1 {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+.cl3 ul {
+  margin-bottom: 90px;
+}
+.cl3 ul li,
+.cl4 ul li {
+  flex: 0 0 calc(33% - 30px);
+  height: 70vh;
+  background-color: #fff;
+}
+.car-list3:hover .img {
+  transform: scale(0.9);
+}
+.car-list3 .carts {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+  padding: 4px;
+  border-radius: 50%;
+  color: white;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.car-list3:hover .carts {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* /////////////////////////// */
+.blogs{
+  margin-bottom: 180px;
+
+}
+.cl4 {
+  width: 100%;
+}
+.cl4 ul {
+  display: flex;
+  flex-flow: row;
+  width: 90%;
+  gap: 30px;
+  margin: auto;
+}
+#chevron {
+  background-color: unset;
+}
+#chevron:hover {
+  color: black;
+}
+.news {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  transition: all 0.4s;
+}
+.check{
+  display: inline-block;
+}
+.check:hover{
+  text-decoration: underline;
+  color: red;
+}
+
+.fl-cl1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  background-color: #f6f6f6 !important ;
+  height: 50vh;
+  list-style: none;
+}
+.fl-cl2 {
+  margin-left: 20px;
+}
+.bg-bk {
+  background-color: black;
+  padding: 0px 18px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  color: white;
+  display: inline-block;
+}
+
+.txt-st {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+}
+.txt-st:hover {
+  text-decoration: underline;
+}
+.trend span {
+  color: gray;
+}
+.fl-rw {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.icon1 {
+  margin-left: 10%;
+}
+.icon2 {
+  margin-right: 10%;
+}
+

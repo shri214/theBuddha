@@ -1,0 +1,269 @@
+/* stylings  1180px*/
+
+@media screen and (max-width: 1180px) {
+  .navbar {
+    padding: 15px 40px !important;
+  }
+ 
+  .card {
+    height: 70vh;
+  }
+  .card img {
+    object-fit: cover;
+  }
+  .title {
+    font-size: 3.8rem;
+  }
+  .para {
+    font-size: 1.3rem;
+  }
+  .texts h6 {
+    margin-top: 50px;
+  }
+  .show {
+    width: 130px;
+    font-size: 1.2rem;
+    height: 45px;
+  }
+
+  .controller {
+    margin-top: 70px;
+    padding: 0px 65px;
+    margin-bottom: 30px;
+  }
+  .controller h1 {
+    font-weight: 500;
+    font-size: 2.8rem;
+  }
+  .controller div span {
+    padding: 8px;
+    margin-right: 8px;
+  }
+  .Carousel ul li button {
+    height: 30px;
+  }
+
+  .Carousel ul li {
+    flex: 0 0 calc(33% - 30px);
+  }
+
+  .Carousel2 ul .car-list2 {
+    flex: 0 0 calc(33% - 30px);
+  }
+  .two-box {
+    margin-top: 75px;
+  }
+
+  .cl3 ul li {
+    flex: 0 0 calc(50% - 30px);
+  }
+  .cl3 ul li .pricetag {
+    justify-content: center;
+    align-items: center;
+  }
+  .cl3 ul li .pricetag .stars {
+    justify-content: center;
+    gap: 20px;
+  }
+  .blogs {
+    margin-bottom: 70px;
+  }
+}
+/* stylings  1000px*/
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 15px 40px !important;
+  }
+  .links-groups {
+    display: none;
+  }
+  .df-n {
+    display: none;
+  }
+  .menu-list {
+    display: flex;
+  }
+  .menuList {
+    font-size: 1.8rem !important;
+  }
+  .Sidebar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    flex-flow: column;
+    height: 94vh;
+    overflow-y: auto;
+    padding: 5%;
+    width: 30%;
+  }
+  .nested-drop{
+    padding: 0px;
+  }
+  .dropdown-item {
+    background-color: #d4e1eb;
+    padding: 10px;
+  }
+  .toggle a {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .Sidebar .ft-logo {
+    margin-bottom: 20px;
+  }
+  .ele {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  .ele h3 {
+    font-weight: 500;
+  }
+  .ele p{
+    font-size: 0.9rem;
+    display: inline-block;
+    width: fit-content;
+  }
+  .dropdown-item .cl{
+    margin-bottom: 10px;
+  }
+  .address{
+    margin-bottom: 20px;
+  }
+  .copyright{
+    display: flex;
+    flex-flow: column;
+  }
+  .cl4 ul{
+    flex-flow: row wrap;
+  }
+  .cl4 ul li {
+    flex: 0 0 calc(50% - 30px);
+  }
+  .footer{
+    padding-top: 100px;
+    position: relative;
+  }
+  .ft-logo{
+    position: absolute;
+    top: 10px;
+  }
+  .controller{
+    margin-top: 40px;
+  }
+  .controller div{
+    display: none;
+  }
+  .controller h1{
+    font-size: 2.4rem;
+  }
+  .items .controller h1 {
+    margin-top: 38px;
+    margin-bottom: 0px;
+  }
+  .copyright{
+    padding: 17px;
+    justify-content: space-evenly;
+  }
+  .box{
+    height: 40vh;
+    margin: 0px 15px;
+  }
+}
+
+/* stylings  770px*/
+@media screen and (max-width: 770px){
+  .card{
+    flex-flow: column;
+    height: fit-content;
+    align-items: center;
+  }
+ 
+  .texts{
+    padding: 0px 100px;
+  }
+  .Carousel ul li {
+    flex: 0 0 calc(50% - 30px);
+  }
+  .Carousel2 ul .car-list2 {
+    flex: 0 0 calc(50% - 30px);
+  }
+  .two-box{
+    flex-flow: column;
+  }
+  .box{
+    flex-basis: unset;
+    width: 90%;
+  }
+  .cl4 ul{
+    flex-flow: column;
+    width: 80%;
+  }
+  .news{
+    display: flex !important;
+  }
+  .blog-ul li{
+    height: 40vh !important;
+    flex: unset !important;
+  }
+  .controller{
+    padding: 0 70px;
+  }
+
+  .footer{
+    flex-flow: row wrap;
+    padding-top: 40px;
+    width: 65%;
+  }
+  .ft-logo{
+    all: unset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+  .ft-cl{
+    flex-basis: 50%;
+  }
+  .fb-40{
+    flex-basis: 100%;
+    margin-top: 21px;
+  }
+  .back-to-top{
+    left: 90vw;
+  }
+}
+
+/* styling 580px */
+
+@media screen and (max-width: 580px) {
+  .Carousel ul li{
+    flex: 0 0 calc(100% - 30px);
+  }
+  .Carousel2 ul .car-list2 {
+    flex: 0 0 calc(100% - 30px);
+}
+}
+@media screen and (max-width: 570px) {
+ .controller h1{
+  display: block;
+  margin: auto;
+ }
+ .blogs .controller{
+  flex-flow: column;
+  align-items: self-start;
+ }
+ .blogs .controller h1{
+  margin: 0px !important;
+ }
+ .footer{
+  flex-flow: column;
+ }
+ .logins{
+  display: none;
+ }
+ .Sidebar{
+  width: 70%;
+ }
+}
