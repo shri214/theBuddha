@@ -246,9 +246,23 @@
 }
 }
 @media screen and (max-width: 570px) {
+  .title{
+    font-size: 3rem;
+  }
+.texts h6{
+  margin-top: 20px;
+}
  .controller h1{
   display: block;
   margin: auto;
+ }
+ .para{
+  font-size: 1rem;
+ }
+ .show{
+  font-size: 0.9rem;
+  width: 120px;
+  height: 40px;
  }
  .blogs .controller{
   flex-flow: column;
@@ -265,5 +279,8 @@
  }
  .Sidebar{
   width: 70%;
+ }
+ .back-to-top{
+  left: 80vw;
  }
 }
